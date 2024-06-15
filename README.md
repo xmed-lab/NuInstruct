@@ -1,4 +1,4 @@
-# Holistic Autonomous Driving Understanding by Bird’s-Eye-View Injected Multi-Modal Large Models
+# [CVPR2024]Holistic Autonomous Driving Understanding by Bird’s-Eye-View Injected Multi-Modal Large Models
 ### [[Paper]](https://arxiv.org/pdf/2401.00988.pdf) 
 
 > [**Holistic Autonomous Driving Understanding by Bird’s-Eye-View Injected Multi-Modal Large Models**](https://arxiv.org/pdf/2401.00988.pdf),          
@@ -19,14 +19,27 @@ grounded in logical analysis.
 ![img|center](./image/fig_statistics.png)
 Statistics of NuInstruct. (a) Proportions of different tasks. The size of the arc represents the proportions of each task, while the same color indicates tasks of the same category. Our task encompasses a diverse range of tasks including perception, prediction, risk, and planning. (b) Response numbers under different views. The horizontal axis represents different views,and the vertical axis indicates the number of responses requiring information from the corresponding view. (c) View percentages within different tasks. The horizontal and vertical axes represent the proportion of different views and task classes, respectively
 
-
+## Annotation Details
+The format of the annotation file is shown as follows:
+```none
+Train
+{
+  'task': ...,  # the task type, e.g., risk-overtaking
+  'qa_id':...,   # QA pairs ID
+  'img_path':..., # image path list for a video clip
+  'Question':...., # 
+  'Answer':...,
+  'sample_list':.... # sample token list of corresponding images in NuScense
+}
+```
+You can download the images from [nuScenes](https://www.nuscenes.org/)
 ## BibTeX
 If you find our work useful in your research, please consider citing our paper:
 ```
 @article{ding2024holistic,
   title={Holistic Autonomous Driving Understanding by Bird's-Eye-View Injected Multi-Modal Large Models},
   author={Xinpeng, Ding and Jinahua, Han and Hang, Xu and Xiaodan, Laing and Xu, Hang and Wei, Zhang and Xiaomeng, Li},
-  booktitle={arXiv preprint},
+  booktitle={CVPR24},
   year={2024}
 }
 ```
