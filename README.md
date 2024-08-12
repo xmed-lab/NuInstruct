@@ -33,6 +33,8 @@ Train
 }
 ```
 You can download the images from [nuScenes](https://www.nuscenes.org/)
+
+You can also download the annotations from [Google Driver](https://drive.google.com/file/d/1ybwvgnPFRVwmEAJudWwnGQ8wLitzQ82O/view?usp=sharing)
 ## BibTeX
 If you find our work useful in your research, please consider citing our paper:
 ```
